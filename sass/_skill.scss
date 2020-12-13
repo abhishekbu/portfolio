@@ -1,0 +1,59 @@
+.skill {
+  flex: 40%;
+  height: 30rem;
+  padding: 2rem;
+  box-shadow: $box-shadow-section;
+  margin-right: 2rem;
+  border-radius: 1.2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    & {
+      flex: 100%;
+      margin-right: 0;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .sk {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+
+    .progress {
+      width: 65%;
+      margin: auto 0;
+      background: #c4c4c4;
+
+      &__bar {
+        height: 1rem;
+        margin: auto 0;
+        background-color: $color-skill;
+        border-radius: 1.2rem;
+
+        &--1 {
+          width: 60%;
+        }
+
+        &--2 {
+          width: 70%;
+        }
+
+        &--3 {
+          width: 80%;
+        }
+
+        &--4 {
+          width: 50%;
+        }
+
+        &--5 {
+          width: 70%;
+        }
+
+        &--6 {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+$font-display-1: "Montserrat", sans-serif;
+$font-display-2: "Roboto", sans-serif;
+
+$color-grey-1: #333333;
+$color-grey-2: #4f4f4f;
+$color-grey-3: #828282;
+
+$color-grey-light: #e0e0e0;
+
+$color-blue-1: #6aa2ef;
+$color-blue-2: #5c94e1;
+
+$color-skill: rgba(47, 128, 237, 0.7);
+
+$color-white: #ffffff;
+
+$box-shadow-section: 0 1rem 3rem rgb(228, 228, 228);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-display-1;
+  line-height: 1.6;
+}
+
+hr {
+  color: #333333;
+  width: 40%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+//------------------------- MEDIA QUERIES ------------------------
+
+$bp-largest: 81.25em; // 1300px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 43.75em; // 700px
+$bp-smallest: 25em; //400px
+
+@media only screen and (max-width: $bp-largest) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: $bp-medium) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media only screen and (max-width: $bp-small) {
+  html {
+    font-size: 40%;
+  }
+}

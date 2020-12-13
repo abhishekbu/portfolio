@@ -1,0 +1,102 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+
+  @media only screen and (max-width: $bp-large) {
+    & {
+      width: 90%;
+    }
+  }
+}
+
+.profile {
+  margin: 5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  .profile__content {
+    flex: 1;
+
+    @media only screen and (max-width: $bp-small) {
+      & {
+        flex: 100%;
+      }
+    }
+
+    .profile__info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: $mb-small;
+
+    }
+
+
+    .profile__about {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 120rem;
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    & {
+      height: auto;
+    }
+  }
+
+  .blog {
+    flex: 50%;
+    padding: 2rem;
+    margin-left: 2rem;
+    height: 65rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        flex: 100%;
+        margin-left: 0;
+        margin-bottom: 4rem;
+      }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: auto;
+    }
+    
+  }
+
+  .hobbies {
+    padding: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        flex: 100%;
+      }
+    }
+  }
+
+  .exp {
+    flex: 50%;
+    padding: 2rem;
+    margin-left: 2rem;
+    height: 52.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      & {
+        flex: 100%;
+        margin-left: 0;
+      }
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: auto;
+    }
+  }
+}
